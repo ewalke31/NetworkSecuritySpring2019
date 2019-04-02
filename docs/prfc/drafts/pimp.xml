@@ -268,7 +268,7 @@
 		        <t>*Packet with invalid flags (invalid flag combination) is received</t>
        </list></t>
        
-       <t>In case of experiencing packet loss, sender of a packet should keep a timer of minimum 5 seconds timeout before receiving ACK, after which it should resend the previous packet.</t>
+       <t>In case of experiencing packet loss, sender of a packet should keep a timer of minimum 0.5 seconds timeout before receiving ACK, after which it should resend the previous packet.</t>
 
        <t>In case of corrupted data, receiver should immediately sends a request for retranmission packet whose RTR flag MUST be set, together with the correct ACK number.</t>
 
